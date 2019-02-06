@@ -15,20 +15,20 @@
         </ul>
     </nav>
     <div class="contactform">
-        <form action="" method="post">
+        <form action="sendEmail.php" method="post">
             <span><label for="name">Name:</label></span>
-            <p><input type="text" id="name" required onkeyup="validation();"></p>
+            <p><input type="text" id="name" name="name" required onkeyup="validation();"></p>
             <p><span id="nameError"></span></p>
             <span><label for="phone">Phone No:</label></span>
-            <p><input type="text" id="phone" required onkeyup="validatePhone();"></p>
+            <p><input type="text" id="phone" name="phone" required onkeyup="validatePhone();"></p>
             <p><span id="phoneError"></span></p>
             <span><label for="email">Email:</label></span>
-            <p><input type="email" id="email" required onkeyup="validationEmail();"></p>
+            <p><input type="email" id="email" name="email" required onkeyup="validationEmail();"></p>
             <p><span id="emailError"></span></p>
             <p><label for="msg">Message:</label></p>
             <p> <textarea name="msg" id="msg" cols="30" rows="10" onkeyup="validMessage();"></textarea></p>
             <p><span id="msgError"></span></p>
-            <p><input type="submit" value="Submit"></p>
+            <p><input type="submit" name="submit" value="Submit"></p>
         </form>
     </div>   
 
